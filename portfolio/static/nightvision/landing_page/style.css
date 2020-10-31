@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    text-align: center;
+    /* background-color: #0a3d16c9; */
+}
+header{
+    width: 100%;
+    position: relative;
+    background: url('../images/background/background3.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section{
+    margin-top: 3.5rem;
+}
+h2{
+    color: #96ca51;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+p{
+    font-family: 'Abel', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+hr{
+    height: .5rem;
+    background-color: #96ca51;
+    border: none;
+}
+span{
+    color: #5e5e5e;
+}
+/* Header section */
+.notice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: rgba(6, 19, 1, .9);
+    color: white;
+}
+.wrapper-header
+{
+    background: linear-gradient(185deg, rgba(6, 19, 1, .9) 10%, rgba(14, 46, 2, .5) 100%);
+    height: 35rem;
+}
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    background: white;
+    border-radius: 0 0 6px 6px;
+}
+.logo-image{
+    width: 14rem;
+}
+.qoute-section{
+    transform: translateY(10rem);
+    width: 75vw;
+    max-width: 35rem;
+    margin: auto;
+}
+.qoute{
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: #30cb8850;
+    border: 1px solid #96ca51;
+    border-radius: 6px;
+    text-shadow: 3px 3px 5px rgba(6, 19, 1, .9);
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    padding: 6px;
+}
+
+/* Main section */
+.details{
+    border-radius: 6px;
+    background-color: #d9f8d9;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.detail-contant{
+    padding: 15px;
+    height: 100%;
+}
+.detail-conatiner{
+    border: 2px dashed rgba(92, 124, 56, .5);
+    border-radius: 6px;
+    border-top: none;
+    height: 50%;
+}
+.detail-conatiner p{
+    padding: 1rem;
+    font-size: 1rem;
+}
+.contant-container{
+    position: relative;
+}
+.contant-img{
+    width: 100%;
+
+}
+.sub-detail p{
+    font-size: 1.5rem;
+    font-family: 'Volkhov', serif;
+    color: black;
+}
+
+
+/* About section */
+
+.about{
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 45rem;
+    margin: 0 auto 3.5rem auto;
+    border-radius: 1rem;
+    background-color: rgb(6, 19, 1);
+    color: white;
+}
+.about h2{
+    font-size: 2rem;
+}
+.image-container{
+    overflow: hidden;
+    min-height: 10rem;
+    width: auto;
+}
+.image{
+    display: none;
+    width: 100%;
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* event */
+
+.event-container{
+    margin: 0;
+}
+.cover{
+    width: 85%;
+}
+.event-description p{
+    font-family: 'Abel', sans-serif;
+    font-size: .7rem;
+}
+
+/* Team */
+.team-founder{
+    width: 100%;
+}
+.team{
+    width: 80%;
+    margin:0 auto 1.5rem auto;
+}
+.team img{
+    width: 100%;
+    border: 5px solid #96ca51;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+.team p{
+    font-family: 'Abel', sans-serif;;
+    font-size: 1rem;
+}
+
+
+/* Footer */
+footer{
+    background-color: #0a0c0ae3;
+    color: white;
+}
+
+
+/* Google Map */
+.mapouter
+{
+  position:relative;
+  text-align:center;
+  width:500;
+}
+.gmap_canvas
+{
+  overflow:hidden;
+  background:none!important;
+  width: 500;
+}
+#gmap_canvas
+{
+    width: 100%;
+}
+.contact-us{
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+.contact-us div p{
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+    align-items: center;
+}
+.open{
+    border:2px solid white;
+    border-top: none;
+    padding: 5px 5px;
+    margin-bottom: 25px;
+}
+.social_icon
+{
+  width: .8rem;
+}
+
+@media screen and (min-width:565px){
+    .qoute-section{
+        transform: translateY(11rem);
+    }
+    .about{
+        font-size: 1.1rem;
+    }
+    .event-description{
+        font-size: 1rem;
+    }
+    .team{
+        width: auto;
+    }
+    .fouders{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+    }
+    .team-memebers{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+@media screen and (min-width:760px){
+
+    .logo-section{
+        height: 200px;
+        max-height: 200px;
+        width: 50%;
+        margin: auto;
+    }
+    .logo-image{
+        display: inline-block;
+        width: 300px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 2px dashed #96ca51;
+        border-radius: 6px;
+        border-top: none;
+        border-bottom: none;
+    }
+    .shop-detail-container{
+        display: flex;
+        gap:2rem;
+        width: 95%;
+        max-width: 1200px;
+        margin: 3rem auto 5rem auto;
+
+    }
+    .details{
+        box-shadow: 2px 1px 5px #96ca51, -2px 1px 5px #96ca51 ;
+        background-color: white;
+    }
+    .detail-conatiner p{
+        font-size: .75rem;
+        padding: 5px;
+    }
+    .team-founder{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1020px){
+    .detail-conatiner p{
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+    .about-container{
+        display: flex;
+        width: 95%;
+        margin: 3.5rem auto;
+    }
+    .about{
+        font-size: 1.3rem;
+        width: 29rem;
+        background-color: white;
+        color: #1f1e1e;
+    }
+    .image-container{
+        overflow: visible;
+        box-shadow: 0 2px green;
+        height: 26rem;
+    }
+    .image{
+        background-color: black;
+        width: 30rem;
+        height: 25rem;
+        border-radius: 11%;
+    }
+    .image img{
+        width: 30rem;
+        height: 25rem;
+        border-radius: 11%;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .cover{
+        width: 50rem;
+    }
+    .about-container{
+        display: flex;
+        width: 95%;
+        max-width: 1300px;
+        margin: 3.5rem auto;
+    }
+    .about{
+        font-size: 1.5rem;
+        width: 30rem;
+        padding: 0;
+    }
+    .image-container{
+        position: relative;
+        right: 4rem;
+    }
+    .image{
+        width: 35rem;
+    }
+    .image img{
+        width: 35rem;
+    }
+}
